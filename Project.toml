@@ -1,0 +1,13 @@
+name = "GridapRobustDarcyForchheimer"
+uuid = "c3c3e900-df10-4ef1-8b98-26156cba46b2"
+authors = ["Ricardo Ruiz Baier <ricardo.ruizbaier@monash.edu>"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
