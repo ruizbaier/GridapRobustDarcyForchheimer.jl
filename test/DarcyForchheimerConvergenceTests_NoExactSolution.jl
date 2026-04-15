@@ -169,7 +169,7 @@ module DarcyForchheimerConvergenceTests_NoExactSolution
     push!(rupre,0.)
     push!(rppre,0.)
 
-    modelfine = generate_rectangle(nkmax+1)
+    modelfine = generate_rectangle(nkmax+2)
     setup_model_labels_rectangle_channel!(modelfine)
     uref,pref,_,_,_,_,_,_ = solve_ForchheimerNoExact(modelfine; k=k, generate_output=false)
 
@@ -219,5 +219,5 @@ module DarcyForchheimerConvergenceTests_NoExactSolution
     println("=======================================================")
 
   end
-  convergence_test(;nkmax=4,k=1,generate_output=false)
+  convergence_test(;nkmax=6,k=0,generate_output=false)
 end
